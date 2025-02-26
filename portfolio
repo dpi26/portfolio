@@ -1,0 +1,774 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+          content="width=device-width, initial-scale=1.0">
+    <title>My wbsites</title>
+    <link rel="stylesheet" 
+          href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+          integrity=
+"sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+             crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="indexx.css">
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Header Navbar Styles */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-image: linear-gradient(90deg, #6f93c2, #79adf0, #64b5eb);
+    background-color: transparent;
+}
+
+.logo {
+    padding: 0 5rem;
+    color: #fff;
+}
+
+.logo .logo-heading {
+    color: #fff;
+}
+
+.menu {
+    padding: 0 5rem;
+}
+
+.hamburger {
+    display: none;
+    color: #fff;
+    font-size: 25px;
+}
+
+.cross-icon {
+    display: none;
+}
+
+.menu .menu-list {
+    display: flex;
+    list-style: none;
+}
+
+.menu-list .menu-list-items {
+    padding: 0.5rem 1rem;
+}
+
+@media screen and (min-width: 856px) and (max-width: 1024px) {
+    .menu-list .menu-list-items {
+        padding: 0.5rem 0.3rem;
+    }
+}
+
+/* Main Hero Section Styles */
+.hero {
+    background-image: url('https://i.redd.it/zszdxa4n0qoa1.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin: 4.8rem 0;
+}
+
+.hero .intro {
+    text-align: center;
+    color: #fff;
+    margin: 0 5rem;
+}
+
+.hero .intro-buttons {
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* About section styles */
+.about {
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(45deg, #757fcf, #709aca);
+    justify-content: space-between;
+    width: 100%;
+}
+
+.about .about-text {
+    width: 450px;
+    color:#fff;
+    padding:3rem 5rem 1rem 5rem;
+}
+
+.about .about-image table {
+    height: 400px;
+    width: 450px;
+    color: #fff;
+    padding:7rem 15rem 5rem  5rem;
+}
+
+/* Portfolio section styles */
+.portfolio {
+    margin: 4.8rem 0;
+    padding: 1rem 1rem 1rem 3rem;
+}
+
+.port-card {
+    padding: 0 !important;
+    background: none !important;
+    border: 2px solid #414bd3;
+}
+
+.port-card .image {
+    width: 100%;
+}
+
+.port-card .image img {
+    height: 200px;
+    width: 100%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+/* Services section styles */
+.services {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 4.8rem 0;
+    padding: 0 5rem;
+}
+
+.my-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+       margin: 2rem 0;
+}
+
+.my-row .my-col {
+    text-align: center;
+     box-shadow: 2px 3px 4px 5px red;
+     border-radius: 20px;
+    width: 30%;
+     animation: projects 2s infinite;
+}
+ @keyframes projects{
+     0%{
+         background-color:#ccffff;
+         
+     }
+     25%{
+         background-color:#88ffff;
+     }
+     50%{
+         background-color:#99ffff;
+         
+     }
+     100%{
+         background-color:#ccffff;
+     }
+    
+}
+.my-card {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    background-image: linear-gradient(#72bef1, #94c2e7, #78cde2);
+    padding: 1rem;
+}
+
+.icon {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: #363D73;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon svg {
+    font-size: 30px;
+    color: #fff;
+}
+
+/* Contact section styles */
+.contact {
+    padding: 0 5rem;
+}
+
+.contact-content {
+    display: flex;
+    margin: 3rem 0;
+    justify-content: space-between;
+}
+
+.contact-form-container {
+    width: 50%;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form .form-controls {
+    width: 80%;
+    padding: 10px 0;
+    margin: 1.67rem 0;
+}
+
+.contact-form .form-btn {
+    width: 83%;
+}
+
+.contact-details {
+    width: 50%;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 2rem;
+}
+
+.footer-list-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    margin: 1rem 1rem 0 1rem;
+    border-radius: 50%;
+    background-color: #9ac8f3;
+}
+
+.footer-links {
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-menu {
+    padding: 0 5rem;
+}
+
+.footer-menu .footer-menu-list {
+    display: flex;
+    list-style: none;
+}
+
+
+
+
+
+
+/* utility classes */
+.greet-heading {
+    font-size: 1.3rem;
+    font-weight: lighter;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+.my-heading {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.sub-heading {
+    margin: 0;
+    font-size: 0.8rem;
+    color: #ccc;
+    font-weight: lighter;
+}
+
+.links:hover {
+    border-bottom: 2px solid #fff;
+}
+
+.links {
+    border-bottom: 2px solid transparent;
+    transition: all 0.25s;
+    padding: 5px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    border: none;
+}
+
+.common-btn {
+    background-color: #9cbcd6;
+    color: #fff;
+    border: 2px solid #8ec9e4;
+    transition: all 0.25s;
+}
+
+.common-btn:hover {
+    background-color: #fff;
+    color: #baece7;
+    border: 2px solid #608bda;
+    outline: none;
+}
+
+.ghost-btn {
+    background-color: #fff;
+    color: #1f8171;
+    border: 2px solid #7aaddd;
+    outline: none;
+}
+
+.ghost-btn:hover{
+    background-color: #8fb3e2;
+    color: #fff;
+    transition: all 0.25s;
+    border: 2px solid #7bb8f1;
+}
+
+.heading-span {
+    font-weight: bolder;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.small-para {
+    font-size: 14px;
+    color: #fff;
+}
+
+.white-text {
+    color: #fff;
+}
+
+.blue-text {
+    color: #363D73;
+}
+    </style>
+    <style>
+        @media screen and (min-width: 576px) and (max-width: 820px) {
+    .logo {
+        padding: 0 3rem;
+    }
+
+    .hamburger {
+        display: block;
+        padding: 0 3rem;
+    }
+
+    .menu {
+        position: absolute;
+        right: 0;
+        padding: 0 3rem;
+        top: 75px;
+        background-image: linear-gradient(180deg, #9bb4eb, #98ebee, #35A99C);
+        display: none;
+        transition: all 0.25s;
+    }
+
+    .menu .menu-list {
+        flex-direction: column;
+    }
+
+    .portfolio {
+        padding: 0;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+
+    .about .about-text {
+        padding: 2rem;
+    }
+
+    .about .about-image img {
+        padding: 2rem;
+    }
+
+    .services {
+        padding: 0;
+    }
+
+    .my-row {
+        gap: 10px;
+    }
+
+    .my-row .my-col {
+        text-align: center;
+        width: 35%;
+    }
+
+}
+
+
+/* CSS for mobile devices */
+@media screen and (min-width: 280px) and (max-width: 576px) {
+    .hero {
+        justify-content: center;
+        color: #fff;
+        background-image: radial-gradient(circle, rgb(15 14 14 / 30%), rgb(102 96 96 / 40%), rgb(163 160 160 / 16%)), url('./Images/heroImg3.avif')
+    }
+
+    .sub-heading {
+        color: #fff9f9cc;
+    }
+
+    .hero .intro-buttons {
+        gap: 20px;
+    }
+
+    .btn {
+        padding: 10px 30px;
+    }
+
+    .logo {
+        padding: 0 2rem;
+    }
+
+    .menu {
+        position: absolute;
+        right: 0;
+        padding: 0 2rem;
+        top: 75px;
+        background-image: linear-gradient(180deg, #a4cefd, #53C8B6, #74D7BB);
+        display: none;
+        transition: all 0.25s;
+    }
+
+    .menu .menu-list {
+        flex-direction: column;
+    }
+
+    .hamburger {
+        display: block;
+        padding: 0 2rem;
+    }
+
+    .portfolio {
+        padding: 0;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+
+    .about .about-text {
+        width: 90%;
+        padding: 1rem;
+    }
+
+    .about .about-image img {
+        width: 90%;
+        padding: 1rem;
+    }
+
+    .services {
+        padding: 0;
+    }
+
+    .my-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        margin: 2rem 0;
+        gap: 1rem;
+    }
+
+    .my-row .my-col {
+        text-align: center;
+        width: 100%;
+    }
+
+    .contact {
+        padding: 0;
+    }
+
+    .contact-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .contact-form-container {
+        width: 80%;
+    }
+
+    .contact-form .form-controls {
+        width: 100%;
+    }
+
+    .contact-form .form-btn {
+        width: 100%;
+    }
+
+    .contact-details {
+        width: 80%;
+    }
+
+    .footer-menu {
+        padding: 0 2rem;
+    }
+
+    .footer-list-items {
+        margin: 0;
+    }
+}
+    </style>
+
+</head>
+
+<body>
+    <!-- Navbar header section -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <h2 class="logo-heading">Dipti Kumari</h2>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars hamburger-icon"></i>
+                <i class="fas fa-times cross-icon"></i>
+            </div>
+            <div class="menu">
+                <ul class="menu-list">
+                    <li class="menu-list-items">
+                        <a class="links" href="#home">
+                              Home
+                          </a>
+                    </li>
+                    <li class="menu-list-items">
+                        <a class="links" href="#portfolio">
+                              Projects
+                          </a>
+                    </li>
+                    <li class="menu-list-items">
+                        <a class="links" href="#about">
+                              About & Contact Me
+                          </a>
+                    </li>                    
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main hero banner -->
+    <section id="home" class="hero">
+        <div class="intro">
+            <div class="headings">
+                <h3 class="greet-heading">Hello, I'm</h3>
+                <h1 class="my-heading">Dipti Kumari</h1>
+                <h4 class="sub-heading">
+                    A  Developer of webpages.
+                </h4>
+            </div>
+            <div class="intro-buttons">
+                <button class="btn common-btn">Profile</button>
+                <button class="btn ghost-btn">Get Resume</button>
+            </div>
+  </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+        <div class="portfolio-heading">
+            <h1 class="my-heading text-center" style="color: rgb(116, 116, 209); font-display: impact;">My Projects</h1>
+        </div>
+        <div class="portfolio-content">
+            <div class="my-row">
+                <div class="my-col">
+                    <div class="my-card port-card">
+                        <div class="image">
+                            <a href="Assignments/index.html">                           
+                                 <img src=" https://www.w3.org/html/logo/img/html5-display.png"
+                                alt="Web Design Image"> </a> 
+
+                        </div>
+                        <h3 class="greet-heading blue-text">HTML</h3>
+                        <p class="small-para blue-text">HTML Project</p>
+                    </div>
+                </div>
+                <div class="my-col">
+                    <div class="my-card port-card">
+                        <div class="image">
+                            <a href="Assignments/index1.html"><img src=" https://miro.medium.com/v2/resize:fit:600/1*OFsc0SD55jhi8cjo7aCA4w.jpeg" 
+                                alt="Web Development Image"></a>
+                        </div>
+                        <h3 class="greet-heading blue-text">CSS </h3>
+                        <p class="small-para blue-text">CSS Projects</p>
+                    </div>
+                </div>
+                <div class="my-col">
+                    <div class="my-card port-card">
+                        <div class="image">
+                            <a href="Assignments/indexjs.html"><img src=" https://hdpng.com/images/javascript-logo-vector-png-logo-of-javascript-195.png" alt="SEO Image">
+                            </a>
+                        </div>
+                        <h3 class="greet-heading blue-text">JavaScript </h3>
+                        <p class="small-para blue-text">JavaScript Projects</p>
+                    </div>
+                </div>
+            </div>
+            <div class="my-row">
+                <div class="my-col">
+                    <div class="my-card port-card">
+                        <div class="image">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzKVrVcrrTL7A8B75qwwrpkAx3uOewEt9RbA&s " 
+                                 alt="Content Writting Image">
+                        </div>
+                        <h3 class="greet-heading blue-text">
+                              JAVA 
+                          </h3>
+                        <p class="small-para blue-text">JAVA Projects</p>
+                    </div>
+                </div>
+                <div class="my-col">
+                    <div class="my-card port-card">
+                        <div class="image">
+                            <a href="Assignment1/indexphp.html"><img src="https://cdn-icons-png.freepik.com/512/8243/8243030.png " 
+                                                                     alt="Wordpress Image"></a>
+                        </div>
+                        <h3 class="greet-heading blue-text">
+                              PHP 
+                          </h3>
+                        <p class="small-para blue-text">
+                              PHP Projects
+                          </p>
+                    </div>
+                </div>
+                <div class="my-col">
+                    <div class="my-card port-card">
+                        <div class="image">
+                            <img src=" https://omicstutorials.com/wp-content/uploads/2024/03/database-management-system.webp" 
+                                 alt="Video Editing Image">
+                        </div>
+                        <h3 class="greet-heading blue-text">
+                              DBMS
+                          </h3>
+                        <p class="small-para blue-text">DBMS Projects</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-text">
+            <h1 class="my-heading">About Me</h1>
+            <p class="lead-para">
+                I am a web developer with an amazing ability to develop websites that are both functional and aesthetically pleasing.
+                 I have a strong understanding of web standards and best practices, and I am passionate about creating websites that users will find easy to use and visually appealing.
+                  I am also proficient in a variety of programming languages and tools, and I have a proven track record of delivering successful projects on time and within budget.
+                   I am a team player who is always willing to lend a helping hand, and I am confident in my ability to contribute to any project. 
+                   I am looking for an opportunity to use my skills and experience to make a positive impact on the web.    
+            </p>
+
+        </div>
+        <div class="about-image">
+            
+            <table>
+                <tr> <th colspan="2"> <h1>Contact us </h1></th></tr> 
+                <tr>
+                   <td><label for="name">Name*:</label></td>
+                   <td><input type="text"></td>
+                </tr>
+                <tr>
+                   <td><label for="Phone number"> Phone no.*:</label></td>
+                   <td><input type="phone number"></td>
+                </tr><tr>
+                   <td><label for="email address"> Email no.*:</label></td>
+                   <td><input type="email adress"></td>
+                </tr><tr>
+                   <td><label for="comment">Comment*:</label></td>
+                   <td><textarea name="comment" rows="5" cols="21"></textarea></td>
+                </tr> <tr>
+                    <td></td>
+                  <td> <input type="submit"></td>
+                </tr>
+             </table>
+
+        </div>
+    </section>
+
+
+    <!-- Footer section -->
+    <footer class="footer">
+        <div class="footer-content text-center">
+            <h4>
+                This portfolio website template is created 
+                  by Dipti @ Kumari.
+            </h4>
+            <div class="social-links">
+                <div class="footer-menu">
+                    <ul class="footer-menu-list">
+                        <li class="footer-list-items">
+                            <a class="footer-links" href="https://bento.me/dipti-kumari">
+                                <i class="fab fa-blackhole"></i>
+                            </a>
+                        </li>
+                        <li class="footer-list-items">
+                            <a class="footer-links" href="#">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="footer-list-items">
+                            <a class="footer-links" href="https://github.com/dpi26">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </li>
+                        <li class="footer-list-items">
+                            <a class="footer-links" href="https://www.linkedin.com/in/dipti-kumari-01786a302?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app ">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"
+        integrity=
+"sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+      </script>
+    <script src="index.js"></script>
+</body>
+
+</html>
