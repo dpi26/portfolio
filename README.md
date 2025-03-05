@@ -5,4 +5,4 @@ this is completed by programming language in php ...
 ........................................................this is. very ..........?
 adsdf fghj kjjj lkl; klkljk 
 this is useful for portfolio
-if any body want to change my code/program using its own code then work on my portfolio..fndkddm
+if any body want to change my code/program using its own code then work on the portfolio
