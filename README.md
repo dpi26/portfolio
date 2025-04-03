@@ -7,4 +7,4 @@ adsdf fghj kjjj lkl; klkljk
 this is useful for portfolio
 if any body want to change my code/program using its own code then work on the portfolio and this is very useful for solving problem..
 this is very useful for the program  for solving the problem...
-in python program we use 
+in python program we use other library to making it app
